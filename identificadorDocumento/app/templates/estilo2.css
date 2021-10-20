@@ -1,0 +1,11 @@
+.div{
+    width: 700px;
+    height: 100px;
+    float: none;
+    background-color: white;
+    border: 1px solid gray;
+    margin-top: 100px;
+    margin-left: 300px;
+    padding-top: 50px;
+    text-align: center;
+}

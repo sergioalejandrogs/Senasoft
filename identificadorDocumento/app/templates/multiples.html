@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="icomoon/fonts/style.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <h1>Ordenar archivos</h1>
+    <hr>   
+         <div>
+            <div class="div1">
+            <select name="" id="" multiple multiple class="select1" data-field-name="permissions" data-is-stacked="0">
+                <option value="">asassasasasas</option>
+                <option value="">sddassdssa</option>
+                <option value="">asassasasasas</option>
+            <option value="">sddassdssa</option>
+            <option value="">asassasasasas</option>
+            <option value="">sddassdssa</option>
+            <option value="">asassasasasas</option>
+            <option value="">sddassdssa</option>
+            <option value="">asassasasasas</option>
+                <option value="">sddassdssa</option>
+                <option value="">asassasasasas</option>
+            <option value="">sddassdssa</option>
+            <option value="">asassasasasas</option>
+            <option value="">sddassdssa</option>
+            <option value="">asassasasasas</option>
+            <option value="">sddassdssa</option>
+            <option value="">asassasasasas</option>
+                <option value="">sddassdssa</option>
+                <option value="">asassasasasas</option>
+            <option value="">sddassdssa</option>
+            <option value="">asassasasasas</option>
+            <option value="">sddassdssa</option>
+            <option value="">asassasasasas</option>
+            <option value="">sddassdssa</option>
+               </select>
+        </div>
+        <div class="div3">
+           <button  class="botonflecha"><span class="icon-circle-right"></span></button><br> 
+        <button class="botonflecha" ><span class="icon-circle-left"></span></button> 
+        </div>
+        
+        <div class="div2">
+            <p>Lorem ipsum dolor</p>
+        <select name="" id="" multiple class="select2" data-field-name="permissions" data-is-stacked="0">
+            <option value="">asassasasasas</option>
+            <option value="">sddassdssa</option>
+            <option value="">
+
+<input type="file" id="files" name="files[]" multiple />
+            <output id="list"></output>
+
+            <script>
+            function handleFileSelect(evt) {
+                var files = evt.target.files; // FileList object
+
+                // files is a FileList of File objects. List some properties.
+                var output = [];
+                for (var i = 0, f; f = files[i]; i++) {
+                output.push('<li><strong>', escape(f.name), '</strong> (', f.type || 'n/a', ') - ',
+                            f.size, ' bytes, last modified: ',
+                            f.lastModifiedDate.toLocaleDateString(), '</li>');
+                }
+                document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';
+            }
+
+            document.getElementById('files').addEventListener('change', handleFileSelect, false);
+            </script>
+
+
+            </option>
+                        
+        </div> 
+         
+         </div>
+</body>
+</html>
