@@ -1,6 +1,11 @@
 from django.shortcuts import render
-
+# from django import "multiples.html"
 # Create your views here.
 
-def index(request):
-    return render(request, 'index.html')
+def multiples(request):
+    return render(request, 'multiples.html')
+
+def individual(request,):
+    return render(request, 'individual.html')
+
+    

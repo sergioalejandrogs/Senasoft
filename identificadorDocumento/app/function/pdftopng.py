@@ -10,7 +10,7 @@ factura = "factura"
 
 nota_credito = "credito"
 
-nota_debito = "debito"
+nota_debito = "débito"
 
 epicrisis = "epicrisis"
 
@@ -27,7 +27,7 @@ orden_remision = "remision"
 def contiene_palabra(palabra, texto):
     return palabra in texto
 
-pdf = "repositorio/credito1.pdf"
+#pdf = "repositorio/debito5t.pdf"
 
 repositorio = "repositorio/"
 
@@ -92,10 +92,12 @@ def convert(pdf, outputDir):
             shutil.move(pdf, "ordenes_de_pedido/")
         elif contiene_palabra(orden_remision, texto.lower()):
             shutil.move(pdf, "ordenes_de_remisión/")
+        else: 
+            shutil.move(pdf, "indeterminado/")
 
         os.remove(myfile)
 
-#for pdf in os.listdir(repositorio):
-#   convert(pdf, outputDir)
+for pdf in os.listdir(repositorio):
+    convert(pdf, outputDir)
 
-convert(pdf, outputDir)
+#convert(pdf, outputDir)
