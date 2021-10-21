@@ -1,17 +1,27 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo2.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/estilo2.css'  %}">
+    <link rel="shortcut icon" type="image/ico" href="{% static 'imagenes/carpeta-icono-azul.ico' %}">
+    <title>Ordenar Archivos</title>
 </head>
 <body>
+    <header class="Titulo">
+        <div>
+            <img class="imgfedesoft" src="https://fedesoft.org/wp-content/uploads/2020/06/img-logo-fedesoft.png" alt="">
+            <h1 class="titulotexto"> ORDENAR ARCHIVOS</h1>  
+        </div>
+        
+    </header>
     <div class="div">
-        <label for="">seleccione<input type="file"> </label>
-        <br><br>
-        <button onClick="alert(' Su archivo se envio correctamente')">Enviar archivo</button>
+        <label for="">Seleccione<input  type="file"> </label>
+        <br>
+        <br>
+        <button class="boton" onClick="alert(' Su archivo se envio correctamente.')">Enviar archivo</button>
         <br> <br>
         
     </div>
