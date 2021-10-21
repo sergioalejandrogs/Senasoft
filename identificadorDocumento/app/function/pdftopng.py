@@ -16,7 +16,7 @@ epicrisis = "epicrisis"
 
 historia_clinica = "clinica"
 
-copia_cedula = "cedula"
+copia_cedula = "cédula"
 
 orden_pedido = "pedido"
 
@@ -27,7 +27,7 @@ orden_remision = "remision"
 def contiene_palabra(palabra, texto):
     return palabra in texto
 
-#pdf = "repositorio/debito5t.pdf"
+pdf = "repositorio/remison8.pdf"
 
 repositorio = "repositorio/"
 
@@ -63,14 +63,22 @@ def convert(pdf, outputDir):
         # Imprimimos el texto resultante y lo cambiamos a minúsculas para evitar pérdida de información al hacer la verificación
         print(texto.lower())
 
-        print(contiene_palabra(nota_credito, texto.lower()))
-        print(contiene_palabra(nota_debito, texto.lower()))
-        print(contiene_palabra(factura, texto.lower()))
-        print(contiene_palabra(copia_cedula, texto.lower()))
-        print(contiene_palabra(historia_clinica, texto.lower()))
-        print(contiene_palabra(epicrisis, texto.lower()))
-        print(contiene_palabra(orden_pedido, texto.lower()))
-        print(contiene_palabra(orden_remision, texto.lower()))
+        if contiene_palabra(nota_credito, texto.lower()):
+            print("Es una nota de crédito")
+        if contiene_palabra(nota_debito, texto.lower()):
+            print("Es una nota de débito")
+        if contiene_palabra(factura, texto.lower()):
+            print("Es una factura")
+        if contiene_palabra(copia_cedula, texto.lower()):
+            print("Es una copia de cédula")
+        if contiene_palabra(historia_clinica, texto.lower()):
+            print("Es una historia clínica")
+        if contiene_palabra(epicrisis, texto.lower()):
+            print("Es una epicrisis")
+        if contiene_palabra(orden_pedido, texto.lower()):
+            print("Es una orden de pedido")
+        if contiene_palabra(orden_remision, texto.lower()):
+            print("Es una orden de remisión")
 
         if contiene_palabra(nota_credito, texto.lower()):
             shutil.move(pdf, "notas_de_credito/")
@@ -97,7 +105,7 @@ def convert(pdf, outputDir):
 
         os.remove(myfile)
 
-for pdf in os.listdir(repositorio):
-    convert(pdf, outputDir)
+#for pdf in os.listdir(repositorio):
+#    convert(pdf, outputDir)
 
-#convert(pdf, outputDir)
+convert(pdf, outputDir)
