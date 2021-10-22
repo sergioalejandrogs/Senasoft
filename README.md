@@ -32,5 +32,7 @@ Para más información sobre el proceso de desarrollo del pproyecto, se pueden d
 
 
 Adriana Carreño
+
 Juan Modesto
+
 Sergio González
