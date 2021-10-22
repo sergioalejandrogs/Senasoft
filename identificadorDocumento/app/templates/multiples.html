@@ -1,3 +1,4 @@
+<!-- Cargamos los codigos guardados en la carpeta static como el css -->
 {% load  static  %}
 <!DOCTYPE html>
 <html lang="en">
@@ -6,30 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/estilo.css'  %}">
-    <link rel="stylesheet" href={% static 'icomoon/fonts/style.css' %}>
     <link rel="icon" href= 'app/static/imagenes/carpeta-icono-azul.ico'>
     <title>Ordenar Archivos</title>
 </head>
 <body>
     <header class="Titulo">
-        <div>
+        <div class="divhead">
             <img class="imgfedesoft" src="https://fedesoft.org/wp-content/uploads/2020/06/img-logo-fedesoft.png" alt="">
             <h1 class="titulotexto"> ORDENAR ARCHIVOS</h1>  
         </div>
         
     </header>
-        <div>
-            <p></p>
-           
-            {% comment %} {{carpeta}}
-            <QuerySet [<carpeta: My second post>, <carpeta: My first post>] >
-            {% for carpeta  in carpeta %} {{ carpeta }}{% endfor %} {% endcomment %}
-        </div>
-        <div class="div01">
-            <div class="div1"> 
-       
-           
+    <div class="div01">
+        <div class="div1" style="width:600px; height:600px; overflow: auto;"> 
+        <!-- Cargamos el codigo de python en el Template de html -->
            {% if Repositorio  %}
+           <p class=".p">Documentos:</p>
+           <hr>
                 <ul>
                     {% for elemento in Repositorio %}
                         <li>
@@ -40,62 +34,10 @@
                     {% endfor %}
                 </ul>
             {% endif %}
-
-            <!-- {% comment %} {%repositorio = "identificadorDocumento/app/function/repositorio/"%} 
-
-             {%for archivo in os.listdir(repositorio):%}    
-            {%print(archivo)%} 
-            {% endfor %} {% endcomment %} -->
-             
-
-                <select name="" id=""  multiple class="select1" data-field-name="permissions" data-is-stacked="0">
-                <option value="">asassasasasas</option>
-                <option value="">sddassdssa</option>
-                <option value="">asassasasasas</option>
-                <option value="">sddassdssa</option>
-                <option value="">asassasasasas</option>
-                <option value="">sddassdssa</option>
-                <option value="">asassasasasas</option>
-                <option value="">sddassdssa</option>
-                <option value="">asassasasasas</option>
-                <option value="">sddassdssa</option>
-                <option value="">asassasasasas</option>
-                <option value="">sddassdssa</option>
-                <option value="">asassasasasas</option>
-                <option value="">sddassdssa</option>
-                <option value="">asassasasasas</option>
-                <option value="">sddassdssa</option>
-                <option value="">asassasasasas</option>
-                <option value="">sddassdssa</option>
-                <option value="">asassasasasas</option>
-                <option value="">sddassdssa</option>
-                <option value="">asassasasasas</option>
-                <option value="">sddassdssa</option>
-                <option value="">asassasasasas</option>
-                <option value="">sddassdssa</option>
-                </select>
-            </div>
-            
-            <div class="div3">
-                <button  class="botonflecha"><span class="icon-circle-right"></span></button><br> 
-                <button class="botonflecha" ><span class="icon-circle-left"></span></button> 
-            </div>
-            
-            <!-- <div class="div2">
-                <p>Lorem ipsum dolor</p>
-                <select name="" id=""class="select2" multiple>
-                    <option value="">asassasasasas</option>
-                    <option value="">sddassdssa</option>
-                    <option value="">asassasasasas</option>
-                    <option value="">sddassdssa</option>
-                    <option value="">asassasasasas</option>
-                    <option value="">sddassdssa</option>
-                </select>
            
-            </div>  -->
-         
-         </div><br>
-         <div class="div4">
+        </div>
+    </div><br>
+         <div class="div2">
              <button class="boton">Reubicar Archivos</button> 
          </div>
 </body>

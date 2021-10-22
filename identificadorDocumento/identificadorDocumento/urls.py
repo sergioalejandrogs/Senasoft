@@ -15,11 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+# Importa la funcion multiples de views
 from app.views import multiples
 
 from app.views import individual
-# from app.views import mostrar
 
 urlpatterns = [
     path('admin/', admin.site.urls),

@@ -1,21 +1,16 @@
+# Se renderiza 
 from django.shortcuts import render
+# Se importa la libreria os para mostrar  los archivo 
+# del repositorio  en pantalla
 import os
-# from django import "multiples.html"
-# Create your views here.
-
+# Se creo una funcion para ver el multiples.html
 def multiples(request):
     repositorio = "app/function/repositorio/"
     
     fichero =  os.scandir(repositorio)
     ctx = {"Repositorio":fichero}
-    #     for fichero in ficheros:
-    #         print(fichero.name)
     return render(request, 'multiples.html',ctx)
 
 def individual(request,):
     return render(request, 'individual.html')
 
-# def mostrar(request,):
-#     repositorio = "identificadorDocumento/app/function/repositorio/"
-#     for archivo in os.listdir(repositorio):
-#         return render(request, archivo)
