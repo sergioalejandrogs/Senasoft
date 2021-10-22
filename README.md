@@ -12,19 +12,23 @@ Posteriormente añadir C:\Program Files\poppler-0.68.0\bin al PATH del sistema. 
 
 En una terminal CMD instalar las siguientes librerías para Python:
 
-$ pip install PILLOW
-$ pip install pdf2image
-$ pip install pytesseract
+  $ pip install PILLOW
+
+  $ pip install pdf2image
+
+   $ pip install pytesseract
 
 Ahora sí es posible ejecutar el proyecto desde una terminal CMD en la carpeta identificadorDocumento/ al ejecutar el comando:
 
-$ python manage.py runserver
+  $ python manage.py runserver
 
 Para ejecutar el comando del aplicativo, desde la carpeta identificadorDocumento/app/function/ ejecutar el comando:
 
-$python func.py
+  $python func.py
 
 Al hacer esto, los archivos se mueven a sus respectivas carpetas.
+
+Para más información sobre el proceso de desarrollo del pproyecto, se pueden dirigir al informe de diseño en: https://docs.google.com/document/d/1apFAs9P_TelZrGQyHwKjjAvVZGZACfVEYnjGezBj_9k/edit?usp=sharing
 
 
 Adriana Carreño
