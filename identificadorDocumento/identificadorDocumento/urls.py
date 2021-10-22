@@ -19,9 +19,11 @@ from django.urls import path
 from app.views import multiples
 
 from app.views import individual
+# from app.views import mostrar
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('multiples/', multiples),
+    path('multiples/', multiples ),
     path("individual/", individual),
+
 ]

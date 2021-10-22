@@ -18,9 +18,36 @@
         </div>
         
     </header>
-
+        <div>
+            <p></p>
+           
+            {% comment %} {{carpeta}}
+            <QuerySet [<carpeta: My second post>, <carpeta: My first post>] >
+            {% for carpeta  in carpeta %} {{ carpeta }}{% endfor %} {% endcomment %}
+        </div>
         <div class="div01">
-            <div class="div1">
+            <div class="div1"> 
+       
+           
+           {% if Repositorio  %}
+                <ul>
+                    {% for elemento in Repositorio %}
+                        <li>
+                            <p>
+                                {{ elemento.name }}
+                            </p>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+
+            <!-- {% comment %} {%repositorio = "identificadorDocumento/app/function/repositorio/"%} 
+
+             {%for archivo in os.listdir(repositorio):%}    
+            {%print(archivo)%} 
+            {% endfor %} {% endcomment %} -->
+             
+
                 <select name="" id=""  multiple class="select1" data-field-name="permissions" data-is-stacked="0">
                 <option value="">asassasasasas</option>
                 <option value="">sddassdssa</option>
@@ -54,7 +81,7 @@
                 <button class="botonflecha" ><span class="icon-circle-left"></span></button> 
             </div>
             
-            <div class="div2">
+            <!-- <div class="div2">
                 <p>Lorem ipsum dolor</p>
                 <select name="" id=""class="select2" multiple>
                     <option value="">asassasasasas</option>
@@ -65,7 +92,7 @@
                     <option value="">sddassdssa</option>
                 </select>
            
-            </div> 
+            </div>  -->
          
          </div><br>
          <div class="div4">

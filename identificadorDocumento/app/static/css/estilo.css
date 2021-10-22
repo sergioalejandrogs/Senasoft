@@ -8,7 +8,7 @@ body{
     margin-left: 270px; 
     border: 1px solid black;
     width: 600px;
-    height: 350px;
+    height: 1000px;
     display: inline-block;
     float: none;
     position: static;
@@ -45,7 +45,9 @@ select{
     /* border: 1px solid black; */
     
 }
-
+div{
+    background-color: white;
+}
 button span{
         font-size: 40px;
         float: left;
