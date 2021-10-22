@@ -16,7 +16,7 @@ En una terminal CMD instalar las siguientes librerías para Python:
 
   $ pip install pdf2image
 
-   $ pip install pytesseract
+  $ pip install pytesseract
 
 Ahora sí es posible ejecutar el proyecto desde una terminal CMD en la carpeta identificadorDocumento/ al ejecutar el comando:
 
