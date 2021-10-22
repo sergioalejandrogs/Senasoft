@@ -11,6 +11,4 @@ def multiples(request):
     ctx = {"Repositorio":fichero}
     return render(request, 'multiples.html',ctx)
 
-def individual(request,):
-    return render(request, 'individual.html')
 

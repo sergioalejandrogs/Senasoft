@@ -18,11 +18,9 @@ from django.urls import path
 # Importa la funcion multiples de views
 from app.views import multiples
 
-from app.views import individual
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('multiples/', multiples ),
-    path("individual/", individual),
-
+    path('/', multiples ),
 ]
