@@ -1,4 +1,3 @@
-from django.shortcuts import render
 import os
 from pdf2image import convert_from_path
 from PIL import Image
@@ -31,23 +30,23 @@ orden_remision2 = "remisión"
 
 # Establecemos los directorios a los que van a ir los archivos
 
-creditos_rep = "notas_de_crédito/"
+creditos_rep = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio/notas_de_crédito/"
 
-debitos_rep = "notas_de_débito/"
+debitos_rep = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio/notas_de_débito/"
 
-facturas_rep = "facturas/"
+facturas_rep = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio/facturas/"
 
-epicrisis_rep = "epicrisis/"
+epicrisis_rep = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio/epicrisis/"
 
-historias_clinicas_rep = "historias_clínicas/"
+historias_clinicas_rep = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio/historias_clínicas/"
 
-copias_cedulas_rep = "copias_de_cédulas/"
+copias_cedulas_rep = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio/copias_de_cédulas/"
 
-ordenes_pedidos_rep = "ordenes_de_pedido/"
+ordenes_pedidos_rep = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio/ordenes_de_pedido/"
 
-ordenes_remisiones_rep = "ordenes_de_remisión/"
+ordenes_remisiones_rep = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio/ordenes_de_remisión/"
 
-indeterminados = "indeterminados/"
+indeterminados = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio/indeterminados/"
 
 # Definimos las funciones que verifican si las palabras clave se encuentran dentro del texto
 
@@ -57,10 +56,10 @@ def contiene_palabra(palabra, texto):
 def contiene_palabras(palabra1, palabra2, texto):
     return palabra1 or palabra2 in texto
 
-repositorio = "repositorio/"
+repositorio = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio/repositorio"
 
 # Repositorio temporal en el que estarán las imágenes que serán leídas por tesseract-OCR
-outputDir = "tempfiles/"
+outputDir = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio/tempfiles/"
 
 # Esta función nos permite convertir los archivos pdf a imágenes jpg para poder ser leídas mediante OCR y obtener el contenido en texto 
 
@@ -182,5 +181,6 @@ def convert(pdf, outputDir):
 
 # Por último, el ciclo siguiente efectúa la función para todos los archivos que se encuentran dentro del repositorio
 
-for pdf in os.scandir(repositorio):
-    convert(pdf, outputDir)
+def run_app():
+    for pdf in os.scandir(repositorio):
+        convert(pdf, outputDir)

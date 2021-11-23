@@ -22,5 +22,5 @@ from app.views import multiples
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('/', multiples ),
+    path('', multiples ),
 ]
