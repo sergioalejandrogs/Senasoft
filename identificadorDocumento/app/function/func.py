@@ -30,23 +30,23 @@ orden_remision2 = "remisión"
 
 # Establecemos los directorios a los que van a ir los archivos
 
-creditos_rep = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio/notas_de_crédito/"
+creditos_rep = "../repositorio/notas_de_crédito/"
 
-debitos_rep = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio/notas_de_débito/"
+debitos_rep = "../repositorio/notas_de_débito/"
 
-facturas_rep = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio/facturas/"
+facturas_rep = "../repositorio/facturas/"
 
-epicrisis_rep = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio/epicrisis/"
+epicrisis_rep = "../repositorio/epicrisis/"
 
-historias_clinicas_rep = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio/historias_clínicas/"
+historias_clinicas_rep = "../repositorio/historias_clínicas/"
 
-copias_cedulas_rep = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio/copias_de_cédulas/"
+copias_cedulas_rep = "../repositorio/copias_de_cédulas/"
 
-ordenes_pedidos_rep = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio/ordenes_de_pedido/"
+ordenes_pedidos_rep = "../repositorio/ordenes_de_pedido/"
 
-ordenes_remisiones_rep = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio/ordenes_de_remisión/"
+ordenes_remisiones_rep = "../repositorio/ordenes_de_remisión"
 
-indeterminados = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio/indeterminados/"
+indeterminados = "../repositorio/indeterminados/"
 
 # Definimos las funciones que verifican si las palabras clave se encuentran dentro del texto
 
@@ -56,10 +56,10 @@ def contiene_palabra(palabra, texto):
 def contiene_palabras(palabra1, palabra2, texto):
     return palabra1 or palabra2 in texto
 
-repositorio = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio/repositorio"
+repositorio = "../repositorio/repositorio/"
 
 # Repositorio temporal en el que estarán las imágenes que serán leídas por tesseract-OCR
-outputDir = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio/tempfiles/"
+outputDir = "../repositorio/tempfiles/"
 
 # Esta función nos permite convertir los archivos pdf a imágenes jpg para poder ser leídas mediante OCR y obtener el contenido en texto 
 

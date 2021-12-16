@@ -2,7 +2,7 @@ from git import Repo
 import os
 from func import run_app
 
-local_repo_directory = "D:/Sergio/Sena_adsi/5_Quinto_trimestre/Senasoft/repositorio"
+local_repo_directory = "../repositorio"
 branch = "master"
 
 def clone_repo():
