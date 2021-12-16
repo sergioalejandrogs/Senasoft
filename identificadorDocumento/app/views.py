@@ -1,9 +1,7 @@
-# Se renderiza 
 from django.shortcuts import render
-# Se importa la libreria os para mostrar  los archivo 
-# del repositorio  en pantalla
 import os
-# Se creo una funcion para ver el multiples.html
+from django.core.files.storage import FileSystemStorage
+
 def multiples(request):
     repositorio = "app/function/repositorio/"
     
@@ -11,4 +9,9 @@ def multiples(request):
     ctx = {"Repositorio":fichero}
     return render(request, 'multiples.html',ctx)
 
-
+def upload(request):
+    if request.method == 'POST':
+        uploaded_file = request.FILES['file']
+        fs = FileSystemStorage()
+        fs.save(uploaded_file.name, uploaded_file)
+    return render(request, 'upload.html')

@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Upload Doccument</title>
+    <link rel="stylesheet" href="{% static 'static/css/upload.css' %}">
+</head>
+<body>
+    <div class="container">
+        <br>
+        <h2>Envíanos tu documento en formato PDF</h2>
+        <br>
+        <hr>
+        <br>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for="file">Tu archivo: </label>
+            <input type="file" name="file" placeholder="archivo.pdf" class="file">
+            <br>
+            <br>
+            <button type="submit" class="button">Enviar Archivo</button>
+        </form>
+    </div>
+</body>
+</html>
