@@ -24,15 +24,8 @@ Ahora sí es posible ejecutar el proyecto desde una terminal CMD en la carpeta i
 
 Para ejecutar el comando del aplicativo, desde la carpeta identificadorDocumento/app/function/ ejecutar el comando:
 
-  $python func.py
+  $python repo.py
 
-Al hacer esto, los archivos se mueven a sus respectivas carpetas.
-
-Para más información sobre el proceso de desarrollo del pproyecto, se pueden dirigir al informe de diseño en: https://docs.google.com/document/d/1apFAs9P_TelZrGQyHwKjjAvVZGZACfVEYnjGezBj_9k/edit?usp=sharing
-
-
-Adriana Carreño
-
-Juan Modesto
+Al hacer esto, el servidor local clona el repositorio en Github https://github.com/sergioalejandrogs/repositorio con los documentos allí alojados y procede a realizar la reorganización de los documentos, para finalmente subirlos automáticamente, y ya organizados en sus respectivas carpetas, al repositorio de los documentos.
 
 Sergio González
